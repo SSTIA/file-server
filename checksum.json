@@ -1,1 +1,17 @@
-{}
+{
+    "/.gitignore": {
+        "size": "26 B",
+        "md5": "4b309e28cca40616f8b0e9b06a295beb",
+        "sha1": "6b5a1cde497e2005bc86c851edf4bf74f8e5e41f"
+    },
+    "/app.js": {
+        "size": "1.19 KB",
+        "md5": "c27a9831284995740e5435fcc785a2a0",
+        "sha1": "edbd02e7f5f670ce1155dbe850322fd35359c473"
+    },
+    "/checksum.js": {
+        "size": "1.31 KB",
+        "md5": "533d36bc1e0652673de52976e7eb2282",
+        "sha1": "e462bc2faa0a145c6b259cab8d4bff7912eb1608"
+    }
+}
