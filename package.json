@@ -1,0 +1,22 @@
+{
+  "name": "file-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "build": "node ./checksum.js"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "filesize": "^3.6.1",
+    "font-awesome": "^4.7.0",
+    "hbs": "~4.0.1",
+    "http-errors": "~1.6.2",
+    "jquery": "^3.3.1",
+    "morgan": "~1.9.0",
+    "popper.js": "^1.14.3"
+  }
+}

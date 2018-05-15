@@ -1,0 +1,45 @@
+<div class="container">
+    <h1>{{title}}</h1>
+    <p>Welcome to {{title}}</p>
+
+    <div id="file-view">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Type</th>
+                <th scope="col">Size</th>
+                <th scope="col">MD5</th>
+                <th scope="col">SHA1</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each data}}
+                <tr>
+                    {{#if dir}}
+                        <th scope="row"><a href="/?path={{path}}">{{name}}</a></th>
+                    {{else}}
+                        <th scope="row"><a href="/public{{path}}" download="{{name}}">{{name}}</a></th>
+                    {{/if}}
+                    <td>{{#with type}}{{this}}{{/with}}</td>
+                    <td>{{#with size}}{{this}}{{/with}}</td>
+                    <td>{{#with md5}}{{this}}{{/with}}</td>
+                    <td>{{#with sha1}}{{this}}{{/with}}</td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+
+    </div>
+
+    <hr/>
+    <p class="float-right">
+        Powered by <a href="https://github.com/tc-imba">tc-imba</a> from <a href="https://github.com/SSTIA">SSTIA</a>
+    </p>
+
+</div>
+
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
