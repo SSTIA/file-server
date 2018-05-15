@@ -37,6 +37,7 @@ async function calculate(dir) {
             md5: md5.digest('hex'),
             sha1: sha1.digest('hex'),
           };
+          console.log(file_path, data[file_path]);
           resolve();
         });
       });
