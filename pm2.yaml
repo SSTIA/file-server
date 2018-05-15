@@ -1,0 +1,4 @@
+# for PM2
+apps:
+  - script: bin/www
+    name: file-server
